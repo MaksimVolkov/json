@@ -23,8 +23,9 @@
 Input:
 ``` bash
 Переходим в github https://github.com/new
-[new_repo.mp4](src%2Fnew_repo.mp4)
+
 ```
+[new_repo.mp4](src%2Fnew_repo.mp4)
 
 Output:
 ```
