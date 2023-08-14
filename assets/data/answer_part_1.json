@@ -1,0 +1,87 @@
+{
+  "task_1": {
+    "input": "",
+    "output": "",
+    "description": "Переходим в github по прямой ссылке https://github.com/new и создаем новый репозиторий:\n- вводим имя репозитория и убеждаемся что оно доступно\n- выбираем тип репозитория Public или Private\n- выбираем галочку при создании репозитория автоматически создать файл README.\n- .gitignore и license выбираем по необходимости.\n- жмем кнопку \"Create repository\"\n- после перенаправляет вашу страницу на созданные репозиторий\n\n![new_repo.gif](assets%2Fimg%2Fnew_repo.gif)"
+  },
+  "task_2": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_3": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_4": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_5": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_6": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_7": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_8": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_9": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_10": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_11": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_12": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_13": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_14": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_15": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_16": {
+    "input": "",
+    "output": "",
+    "description": ""
+  },
+  "task_17": {
+    "input": "",
+    "output": "",
+    "description": ""
+  }
+}
