@@ -5,8 +5,8 @@
 | №  | Title EN | Answer |
 |----|----------|--------|
 | <a id='back_task_1_part_1'>1</a>  | [Create an external repository named JSON.](#task_1_part_1) <details><summary>RU</summary>Создать внешний репозиторий c названием JSON.</details> |  |
-| <a id='back_task_2_part_1'>2</a>  | [Clone JSON repository to local machine.](#task_2_part_1) <details><summary>RU</summary>Клонировать репозиторий JSON на локальный компьютер.</details> |  |
-| <a id='back_task_3_part_1'>3</a>  | [Inside the local JSON, create the file "new.json".](#task_3_part_1) <details><summary>RU</summary>Внутри локального JSON создать файл "new.json".</details> |  |
+| <a id='back_task_2_part_1'>2</a>  | [Clone JSON repository to local machine.](#task_2_part_1) <details><summary>RU</summary>Клонировать репозиторий JSON на локальный компьютер.</details> | git clone https://github.com/MaksimVolkov/json.git <br />cd json/ <br />ls -la |
+| <a id='back_task_3_part_1'>3</a>  | [Inside the local JSON, create the file "new.json".](#task_3_part_1) <details><summary>RU</summary>Внутри локального JSON создать файл "new.json".</details> | touch new.json <br />ls <br /> |
 | <a id='back_task_4_part_1'>4</a>  | [Add file under git.](#task_4_part_1) <details><summary>RU</summary>Добавить файл под гит.</details> |  |
 | <a id='back_task_5_part_1'>5</a>  | [Commit file.](#task_5_part_1) <details><summary>RU</summary>Закоммитить файл.</details> |  |
 | <a id='back_task_6_part_1'>6</a>  | [Push file to external GitHub repository.](#task_6_part_1) <details><summary>RU</summary>Отправить файл на внешний GitHub репозиторий.</details> |  |
@@ -36,11 +36,59 @@
 ![new_repo.gif](assets%2Fimg%2Fnew_repo.gif)
 
 ### <a id='task_2_part_1'>2. Clone JSON repository to local machine.</a>  |  [Back to list](#back_task_2_part_1)
+Input:
+``` bash
+git clone https://github.com/MaksimVolkov/json.git
+cd json/
+ls -la
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course
+$ git clone https://github.com/MaksimVolkov/json.git
+Cloning into 'json'...
+remote: Enumerating objects: 42, done.
+remote: Counting objects: 100% (42/42), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 42 (delta 13), reused 30 (delta 9), pack-reused 0
+Receiving objects: 100% (42/42), 5.69 MiB | 7.32 MiB/s, done.
+Resolving deltas: 100% (13/13), done.
+
+MINGW64 /c/var/1a-testing-course
+$ cd json/
+
+MINGW64 /c/var/1a-testing-course/json (main)
+$ ls -la
+total 21
+drwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ./
+drwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ../
+drwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 .git/
+-rw-r--r-- 1 Maks 197611  416 Aug 14 21:35 .gitignore
+-rw-r--r-- 1 Maks 197611 8436 Aug 14 21:35 README.md
+```
+
 #### Description:
 
 
 
 ### <a id='task_3_part_1'>3. Inside the local JSON, create the file "new.json".</a>  |  [Back to list](#back_task_3_part_1)
+Input:
+``` bash
+touch new.json
+ls
+
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ touch new.json
+MINGW64 /c/var/1a-testing-course/json (main)
+$ ls
+README.md  assets  execute_folder  new.json
+```
+
 #### Description:
 
 

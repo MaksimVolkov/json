@@ -15,8 +15,8 @@
       "id": 2,
       "task_name_en": "Clone JSON repository to local machine.",
       "task_name_ru": "Клонировать репозиторий JSON на локальный компьютер.",
-      "input": "",
-      "output": "",
+      "input": "git clone https://github.com/MaksimVolkov/json.git\ncd json/\nls -la",
+      "output": "MINGW64 /c/var/1a-testing-course\n$ git clone https://github.com/MaksimVolkov/json.git\nCloning into 'json'...\nremote: Enumerating objects: 42, done.\nremote: Counting objects: 100% (42/42), done.\nremote: Compressing objects: 100% (30/30), done.\nremote: Total 42 (delta 13), reused 30 (delta 9), pack-reused 0\nReceiving objects: 100% (42/42), 5.69 MiB | 7.32 MiB/s, done.\nResolving deltas: 100% (13/13), done.\n\nMINGW64 /c/var/1a-testing-course\n$ cd json/\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ ls -la\ntotal 21\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ./\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ../\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 .git/\n-rw-r--r-- 1 Maks 197611  416 Aug 14 21:35 .gitignore\n-rw-r--r-- 1 Maks 197611 8436 Aug 14 21:35 README.md",
       "description": "",
       "increased_complexity": false
     },
@@ -24,8 +24,8 @@
       "id": 3,
       "task_name_en": "Inside the local JSON, create the file \"new.json\".",
       "task_name_ru": "Внутри локального JSON создать файл \"new.json\".",
-      "input": "",
-      "output": "",
+      "input": "touch new.json\nls\n",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch new.json\nMINGW64 /c/var/1a-testing-course/json (main)\n$ ls\nREADME.md  assets  execute_folder  new.json",
       "description": "",
       "increased_complexity": false
     },
