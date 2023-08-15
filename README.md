@@ -16,11 +16,11 @@
 | <a id='back_task_10_part_1'>10</a>  | [In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.](#task_10_part_1) <details><summary>RU</summary>10 В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.</details> | vim preferences.json <br />INSERT <br />{ <br />  "preferences": { <br />    "favorite_movie": "Terminator 2", <br />    "favorite_tv_show": "The Big Bang Theory", <br />    "favorite_food": "Nepalese", <br />    "favorite_season": "Summer", <br />    "desired_travel_destination": "United Kingdom" <br />  } <br />} <br />CTRL+C <br />:wq <br />ENTER |
 | <a id='back_task_11_part_1'>11</a>  | [Create a sklls.json file to add information about the skills that will be studied in the course in JSON format](#task_11_part_1) <details><summary>RU</summary>11 Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON</details> | touch skills.json <br />vim skills.json <br />INSERT <br />{ <br />  "ru": [ <br />    { <br />      "title": "Основы работы ...", <br />      "sections": [{...},{...}] <br />    } <br />  ], <br />  ... see full version in Description.. <br />} <br />CTRL+C <br />:wq <br />ENTER |
 | <a id='back_task_12_part_1'>12</a>  | [Upload 2 files at once to an external repository.](#task_12_part_1) <details><summary>RU</summary>12 Отправить сразу 2 файла на внешний репозиторий.</details> | git add . <br />git commit -m "commit multiple files" <br />git push |
-| <a id='back_task_13_part_1'>13</a>  | [Create a bug_report.json file on the web interface.](#task_13_part_1) <details><summary>RU</summary>13 На веб интерфейсе создать файл bug_report.json.</details> |  |
-| <a id='back_task_14_part_1'>14</a>  | [Make Commit changes (save) changes on the web interface.](#task_14_part_1) <details><summary>RU</summary>14 Сделать Commit changes (сохранить) изменения на веб интерфейсе.</details> |  |
-| <a id='back_task_15_part_1'>15</a>  | [On the web interface, modify the bug_report.json file, add a bug report in JSON format.](#task_15_part_1) <details><summary>RU</summary>15 На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.</details> |  |
-| <a id='back_task_16_part_1'>16</a>  | [Make Commit changes (save) changes on the web interface.](#task_16_part_1) <details><summary>RU</summary>16 Сделать Commit changes (сохранить) изменения на веб интерфейсе.</details> |  |
-| <a id='back_task_17_part_1'>17</a>  | [Synchronize external and local JSON repository](#task_17_part_1) <details><summary>RU</summary>17 Синхронизировать внешний и локальный репозиторий JSON</details> |  |
+| <a id='back_task_13_part_1'>13</a>  | [Create a bug_report.json file on the web interface.](#task_13_part_1) <details><summary>RU</summary>13 На веб интерфейсе создать файл bug_report.json.</details> | See in Description |
+| <a id='back_task_14_part_1'>14</a>  | [Make Commit changes (save) changes on the web interface.](#task_14_part_1) <details><summary>RU</summary>14 Сделать Commit changes (сохранить) изменения на веб интерфейсе.</details> | See in Description |
+| <a id='back_task_15_part_1'>15</a>  | [On the web interface, modify the bug_report.json file, add a bug report in JSON format.](#task_15_part_1) <details><summary>RU</summary>15 На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.</details> | See in Description |
+| <a id='back_task_16_part_1'>16</a>  | [Make Commit changes (save) changes on the web interface.](#task_16_part_1) <details><summary>RU</summary>16 Сделать Commit changes (сохранить) изменения на веб интерфейсе.</details> | See in Description |
+| <a id='back_task_17_part_1'>17</a>  | [Synchronize external and local JSON repository](#task_17_part_1) <details><summary>RU</summary>17 Синхронизировать внешний и локальный репозиторий JSON</details> | git pull |
 
 ### <a id='task_1_part_1'>1. Create an external repository named JSON.</a>  |  [Back to list](#back_task_1_part_1)
 #### Description:
@@ -394,26 +394,93 @@ $ git push
 
 
 ### <a id='task_13_part_1'>13. Create a bug_report.json file on the web interface.</a>  |  [Back to list](#back_task_13_part_1)
+Input:
+``` bash
+See in Description
+```
+
 #### Description:
 
+Step 1
 
+![create_new_file.png](assets%2Fimg%2Fcreate_new_file.png)
+
+Step 2
+
+![new_repo.gif](assets%2Fimg%2Fadd_name_file.png)
 
 ### <a id='task_14_part_1'>14. Make Commit changes (save) changes on the web interface.</a>  |  [Back to list](#back_task_14_part_1)
+Input:
+``` bash
+See in Description
+```
+
 #### Description:
 
+Step 3
 
+![create_new_file.png](assets%2Fimg%2Fcommit_changes.png)
+
+Step 4
+
+![new_repo.gif](assets%2Fimg%2Fcommit_changes_2.png)
+
+Step 5
+
+![new_repo.gif](assets%2Fimg%2Flist_with_bug_report.png)
+
+Step 1-5
+
+![new_repo.gif](assets%2Fimg%2Fcreate-file-github-web.gif)
 
 ### <a id='task_15_part_1'>15. On the web interface, modify the bug_report.json file, add a bug report in JSON format.</a>  |  [Back to list](#back_task_15_part_1)
+Input:
+``` bash
+See in Description
+```
+
 #### Description:
 
+Step 1
+
+![new_repo.gif](assets%2Fimg%2Fedit_file.png)
+
+Step 2
+
+![new_repo.gif](assets%2Fimg%2Fedit_button.png)
+
+Step 3
+
+![new_repo.gif](assets%2Fimg%2Fadd_report.png)
+
+Step 4
+
+![new_repo.gif](assets%2Fimg%2Fadd_report.png)
 
 
 ### <a id='task_16_part_1'>16. Make Commit changes (save) changes on the web interface.</a>  |  [Back to list](#back_task_16_part_1)
+Input:
+``` bash
+See in Description
+```
+
 #### Description:
 
+Step 5
+
+![create_new_file.png](assets%2Fimg%2Fcommit_changes.png)
+
+Step 6
+
+![new_repo.gif](assets%2Fimg%2Fcommit_changes_2.png)
 
 
 ### <a id='task_17_part_1'>17. Synchronize external and local JSON repository</a>  |  [Back to list](#back_task_17_part_1)
+Input:
+``` bash
+git pull
+```
+
 #### Description:
 
 

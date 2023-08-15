@@ -60,24 +60,24 @@
     "description": ""
   },
   "task_13": {
-    "input": "",
+    "input": "See in Description",
     "output": "",
-    "description": ""
+    "description": "Step 1\n\n![create_new_file.png](assets%2Fimg%2Fcreate_new_file.png)\n\nStep 2\n\n![new_repo.gif](assets%2Fimg%2Fadd_name_file.png)"
   },
   "task_14": {
-    "input": "",
+    "input": "See in Description",
     "output": "",
-    "description": ""
+    "description": "Step 3\n\n![create_new_file.png](assets%2Fimg%2Fcommit_changes.png)\n\nStep 4\n\n![new_repo.gif](assets%2Fimg%2Fcommit_changes_2.png)\n\nStep 5\n\n![new_repo.gif](assets%2Fimg%2Flist_with_bug_report.png)\n\nStep 1-5\n\n![new_repo.gif](assets%2Fimg%2Fcreate-file-github-web.gif)"
   },
   "task_15": {
-    "input": "",
+    "input": "See in Description",
     "output": "",
-    "description": ""
+    "description": "Step 1\n\n![new_repo.gif](assets%2Fimg%2Fedit_file.png)\n\nStep 2\n\n![new_repo.gif](assets%2Fimg%2Fedit_button.png)\n\nStep 3\n\n![new_repo.gif](assets%2Fimg%2Fadd_report.png)\n\nStep 4\n\n![new_repo.gif](assets%2Fimg%2Fadd_report.png)\n"
   },
   "task_16": {
-    "input": "",
+    "input": "See in Description",
     "output": "",
-    "description": ""
+    "description": "Step 5\n\n![create_new_file.png](assets%2Fimg%2Fcommit_changes.png)\n\nStep 6\n\n![new_repo.gif](assets%2Fimg%2Fcommit_changes_2.png)\n"
   },
   "task_17": {
     "input": "git pull",
