@@ -13,9 +13,9 @@
 | <a id='back_task_7_part_1'>7</a>  | [Edit the contents of the "new.json" file - write information about yourself (full name, age, number of pets, future desired salary). Write everything in JSON format.](#task_7_part_1) <details><summary>RU</summary>7 Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.</details> | vim new.json <br /> INSERT <br />{ <br />  "user": { <br />    "id":1, <br />    "name":"Dobby", <br />    "last_name":"Houseelf", <br />    "full_name": "Dobby Houseelf Potterovich", <br />    "age": 30, <br />    "number_of_pets": 1, <br />    "desired_salary": 75000 <br />  }} <br />:wq <br />ENTER <br /> |
 | <a id='back_task_8_part_1'>8</a>  | [Submit changes to external repository.](#task_8_part_1) <details><summary>RU</summary>8 Отправить изменения на внешний репозиторий.</details> | git add . <br />git commit -m "added content to file new.json" <br />git push <br /> |
 | <a id='back_task_9_part_1'>9</a>  | [Create preferences.json file](#task_9_part_1) <details><summary>RU</summary>9 Создать файл preferences.json</details> | touch preferences.json |
-| <a id='back_task_10_part_1'>10</a>  | [In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.](#task_10_part_1) <details><summary>RU</summary>10 В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.</details> |  |
+| <a id='back_task_10_part_1'>10</a>  | [In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.](#task_10_part_1) <details><summary>RU</summary>10 В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.</details> | vim preferences.json <br />INSERT <br />{ <br />  "preferences": { <br />    "favorite_movie": "Terminator 2", <br />    "favorite_tv_show": "The Big Bang Theory", <br />    "favorite_food": "Nepalese", <br />    "favorite_season": "Summer", <br />    "desired_travel_destination": "United Kingdom" <br />  } <br />} <br />CTRL+C <br />:wq <br />ENTER |
 | <a id='back_task_11_part_1'>11</a>  | [Create a sklls.json file to add information about the skills that will be studied in the course in JSON format](#task_11_part_1) <details><summary>RU</summary>11 Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON</details> | touch skills.json <br />vim skills.json <br />INSERT <br />{ <br />  "ru": [ <br />    { <br />      "title": "Основы работы ...", <br />      "sections": [{...},{...}] <br />    } <br />  ], <br />  ... see full version in Description.. <br />} <br />CTRL+C <br />:wq <br />ENTER |
-| <a id='back_task_12_part_1'>12</a>  | [Upload 2 files at once to an external repository.](#task_12_part_1) <details><summary>RU</summary>12 Отправить сразу 2 файла на внешний репозиторий.</details> | git add . && git commit -m "commit multiple files" && git push |
+| <a id='back_task_12_part_1'>12</a>  | [Upload 2 files at once to an external repository.](#task_12_part_1) <details><summary>RU</summary>12 Отправить сразу 2 файла на внешний репозиторий.</details> | git add . <br />git commit -m "commit multiple files" <br />git push |
 | <a id='back_task_13_part_1'>13</a>  | [Create a bug_report.json file on the web interface.](#task_13_part_1) <details><summary>RU</summary>13 На веб интерфейсе создать файл bug_report.json.</details> |  |
 | <a id='back_task_14_part_1'>14</a>  | [Make Commit changes (save) changes on the web interface.](#task_14_part_1) <details><summary>RU</summary>14 Сделать Commit changes (сохранить) изменения на веб интерфейсе.</details> |  |
 | <a id='back_task_15_part_1'>15</a>  | [On the web interface, modify the bug_report.json file, add a bug report in JSON format.](#task_15_part_1) <details><summary>RU</summary>15 На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.</details> |  |
@@ -230,11 +230,42 @@ Input:
 touch preferences.json
 ```
 
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ touch preferences.json
+
+```
+
 #### Description:
 
 
 
 ### <a id='task_10_part_1'>10. In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.</a>  |  [Back to list](#back_task_10_part_1)
+Input:
+``` bash
+vim preferences.json
+INSERT
+{
+  "preferences": {
+    "favorite_movie": "Terminator 2",
+    "favorite_tv_show": "The Big Bang Theory",
+    "favorite_food": "Nepalese",
+    "favorite_season": "Summer",
+    "desired_travel_destination": "United Kingdom"
+  }
+}
+CTRL+C
+:wq
+ENTER
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ vim preferences.json
+```
+
 #### Description:
 
 
@@ -264,6 +295,7 @@ Output:
 MINGW64 /c/var/1a-testing-course/json (main)
 $ touch skills.json
 
+MINGW64 /c/var/1a-testing-course/json (main)\n$ vim skills.json"
 ```
 
 #### Description:
@@ -340,7 +372,21 @@ ENTER
 ### <a id='task_12_part_1'>12. Upload 2 files at once to an external repository.</a>  |  [Back to list](#back_task_12_part_1)
 Input:
 ``` bash
-git add . && git commit -m "commit multiple files" && git push
+git add .
+git commit -m "commit multiple files"
+git push
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git add .
+
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git commit -m "commit multiple files"
+
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git push
 ```
 
 #### Description:

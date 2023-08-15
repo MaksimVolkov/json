@@ -55,8 +55,8 @@
     "description": "```json\n{\n  \"ru\": [\n    {\n      \"title\": \"Основы работы с системой контроля версий Git\",\n      \"sections\": [\n        {\n          \"title\": \"Взаимодействие с веб интерфейсом GitHub\",\n          \"sections\": [\n            {\"title\": \"Создание репозитория\"},\n            {\"title\": \"Создание файлов\"},\n            {\"title\": \"Редактирование файлов\"},\n            {\"title\": \"Далать Commit changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Работа с командной строкой\",\n      \"sections\": [\n        {\"title\": \"Клонирование репозитория на локальное устройство\"},\n        {\"title\": \"Создание json файлов\"},\n        {\"title\": \"Редактирование файлов используя vim\"},\n        {\"title\": \"Использование json синтаксиса\"},\n        {\"title\": \"git add добавление (индексирование) файлов в локальном Git репозитории\"},\n        {\"title\": \"git commit - фиксирование изменений в git истории\"},\n        {\"title\": \"git push - отправка зафиксированных изменений на удаленный репозиторий (GitHub)\"},\n        {\"title\": \"git pull - получение изменений из удаленного репозитория (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Создание отчета проделанной работы\"}\n  ],\n  \"en\": [\n    {\n      \"title\": \"Basics of Using Git Version Control System\",\n      \"sections\": [\n        {\n          \"title\": \"Interacting with the GitHub Web Interface\",\n          \"sections\": [\n            {\"title\": \"Creating a Repository\"},\n            {\"title\": \"Creating Files\"},\n            {\"title\": \"Editing Files\"},\n            {\"title\": \"Making Commit Changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Working with the Command Line\",\n      \"sections\": [\n        {\"title\": \"Cloning a Repository to Local Device\"},\n        {\"title\": \"Creating JSON Files\"},\n        {\"title\": \"Editing Files Using vim\"},\n        {\"title\": \"Using JSON Syntax\"},\n        {\"title\": \"git add - Adding (Indexing) Files to Local Git Repository\"},\n        {\"title\": \"git commit - Recording Changes in Git History\"},\n        {\"title\": \"git push - Sending Committed Changes to Remote Repository (GitHub)\"},\n        {\"title\": \"git pull - Fetching Changes from Remote Repository (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Creating a Report of Accomplished Work\"}\n  ]\n}\nCTRL+C\n:wq\nENTER\n```\n"
   },
   "task_12": {
-    "input": "git add . && git commit -m \"commit multiple files\" && git push",
-    "output": "",
+    "input": "git add .\ngit commit -m \"commit multiple files\"\ngit push",
+    "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git add .\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git commit -m \"commit multiple files\"\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git push",
     "description": ""
   },
   "task_13": {
@@ -80,7 +80,7 @@
     "description": ""
   },
   "task_17": {
-    "input": "",
+    "input": "git pull",
     "output": "",
     "description": ""
   }

@@ -79,7 +79,7 @@
       "task_name_en": "Create preferences.json file",
       "task_name_ru": "9 Создать файл preferences.json",
       "input": "touch preferences.json",
-      "output": "",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch preferences.json\n",
       "description": "",
       "increased_complexity": false
     },
@@ -87,8 +87,8 @@
       "id": 10,
       "task_name_en": "In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.",
       "task_name_ru": "10 В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.",
-      "input": "",
-      "output": "",
+      "input": "vim preferences.json\nINSERT\n{\n  \"preferences\": {\n    \"favorite_movie\": \"Terminator 2\",\n    \"favorite_tv_show\": \"The Big Bang Theory\",\n    \"favorite_food\": \"Nepalese\",\n    \"favorite_season\": \"Summer\",\n    \"desired_travel_destination\": \"United Kingdom\"\n  }\n}\nCTRL+C\n:wq\nENTER",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ vim preferences.json",
       "description": "",
       "increased_complexity": false
     },
@@ -97,7 +97,7 @@
       "task_name_en": "Create a sklls.json file to add information about the skills that will be studied in the course in JSON format",
       "task_name_ru": "11 Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON",
       "input": "touch skills.json\nvim skills.json\nINSERT\n{\n  \"ru\": [\n    {\n      \"title\": \"Основы работы ...\",\n      \"sections\": [{...},{...}]\n    }\n  ],\n  ... see full version in Description..\n}\nCTRL+C\n:wq\nENTER",
-      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch skills.json\n",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch skills.json\n\nMINGW64 /c/var/1a-testing-course/json (main)\\n$ vim skills.json\"",
       "description": "```json\n{\n  \"ru\": [\n    {\n      \"title\": \"Основы работы с системой контроля версий Git\",\n      \"sections\": [\n        {\n          \"title\": \"Взаимодействие с веб интерфейсом GitHub\",\n          \"sections\": [\n            {\"title\": \"Создание репозитория\"},\n            {\"title\": \"Создание файлов\"},\n            {\"title\": \"Редактирование файлов\"},\n            {\"title\": \"Далать Commit changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Работа с командной строкой\",\n      \"sections\": [\n        {\"title\": \"Клонирование репозитория на локальное устройство\"},\n        {\"title\": \"Создание json файлов\"},\n        {\"title\": \"Редактирование файлов используя vim\"},\n        {\"title\": \"Использование json синтаксиса\"},\n        {\"title\": \"git add добавление (индексирование) файлов в локальном Git репозитории\"},\n        {\"title\": \"git commit - фиксирование изменений в git истории\"},\n        {\"title\": \"git push - отправка зафиксированных изменений на удаленный репозиторий (GitHub)\"},\n        {\"title\": \"git pull - получение изменений из удаленного репозитория (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Создание отчета проделанной работы\"}\n  ],\n  \"en\": [\n    {\n      \"title\": \"Basics of Using Git Version Control System\",\n      \"sections\": [\n        {\n          \"title\": \"Interacting with the GitHub Web Interface\",\n          \"sections\": [\n            {\"title\": \"Creating a Repository\"},\n            {\"title\": \"Creating Files\"},\n            {\"title\": \"Editing Files\"},\n            {\"title\": \"Making Commit Changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Working with the Command Line\",\n      \"sections\": [\n        {\"title\": \"Cloning a Repository to Local Device\"},\n        {\"title\": \"Creating JSON Files\"},\n        {\"title\": \"Editing Files Using vim\"},\n        {\"title\": \"Using JSON Syntax\"},\n        {\"title\": \"git add - Adding (Indexing) Files to Local Git Repository\"},\n        {\"title\": \"git commit - Recording Changes in Git History\"},\n        {\"title\": \"git push - Sending Committed Changes to Remote Repository (GitHub)\"},\n        {\"title\": \"git pull - Fetching Changes from Remote Repository (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Creating a Report of Accomplished Work\"}\n  ]\n}\nCTRL+C\n:wq\nENTER\n```\n",
       "increased_complexity": false
     },
@@ -105,8 +105,8 @@
       "id": 12,
       "task_name_en": "Upload 2 files at once to an external repository.",
       "task_name_ru": "12 Отправить сразу 2 файла на внешний репозиторий.",
-      "input": "git add . && git commit -m \"commit multiple files\" && git push",
-      "output": "",
+      "input": "git add .\ngit commit -m \"commit multiple files\"\ngit push",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git add .\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git commit -m \"commit multiple files\"\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git push",
       "description": "",
       "increased_complexity": false
     },
