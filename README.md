@@ -7,10 +7,10 @@
 | <a id='back_task_1_part_1'>1</a>  | [Create an external repository named JSON.](#task_1_part_1) <details><summary>RU</summary>Создать внешний репозиторий c названием JSON.</details> |  |
 | <a id='back_task_2_part_1'>2</a>  | [Clone JSON repository to local machine.](#task_2_part_1) <details><summary>RU</summary>Клонировать репозиторий JSON на локальный компьютер.</details> | git clone https://github.com/MaksimVolkov/json.git <br />cd json/ <br />ls -la |
 | <a id='back_task_3_part_1'>3</a>  | [Inside the local JSON, create the file "new.json".](#task_3_part_1) <details><summary>RU</summary>Внутри локального JSON создать файл "new.json".</details> | touch new.json <br />ls <br /> |
-| <a id='back_task_4_part_1'>4</a>  | [Add file under git.](#task_4_part_1) <details><summary>RU</summary>Добавить файл под гит.</details> |  |
-| <a id='back_task_5_part_1'>5</a>  | [Commit file.](#task_5_part_1) <details><summary>RU</summary>Закоммитить файл.</details> |  |
-| <a id='back_task_6_part_1'>6</a>  | [Push file to external GitHub repository.](#task_6_part_1) <details><summary>RU</summary>Отправить файл на внешний GitHub репозиторий.</details> |  |
-| <a id='back_task_7_part_1'>7</a>  | [Edit the contents of the "new.json" file - write information about yourself (full name, age, number of pets, future desired salary). Write everything in JSON format.](#task_7_part_1) <details><summary>RU</summary>Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.</details> |  |
+| <a id='back_task_4_part_1'>4</a>  | [Add file under git.](#task_4_part_1) <details><summary>RU</summary>Добавить файл под гит.</details> | git add . <br />or <br />git add new.json |
+| <a id='back_task_5_part_1'>5</a>  | [Commit file.](#task_5_part_1) <details><summary>RU</summary>Закоммитить файл.</details> | git commit -m "add new.json" |
+| <a id='back_task_6_part_1'>6</a>  | [Push file to external GitHub repository.](#task_6_part_1) <details><summary>RU</summary>Отправить файл на внешний GitHub репозиторий.</details> | git push |
+| <a id='back_task_7_part_1'>7</a>  | [Edit the contents of the "new.json" file - write information about yourself (full name, age, number of pets, future desired salary). Write everything in JSON format.](#task_7_part_1) <details><summary>RU</summary>Отредактировать содержание файла "new.json" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.</details> | vim new.json <br /> INSERT <br />{ <br />  "user": { <br />    "id":1, <br />    "name":"Dobby", <br />    "last_name":"Houseelf", <br />    "full_name": "Dobby Houseelf Potterovich", <br />    "age": 30, <br />    "number_of_pets": 1, <br />    "desired_salary": 75000 <br />  }} <br />:wq <br />ENTER <br /> |
 | <a id='back_task_8_part_1'>8</a>  | [Submit changes to external repository.](#task_8_part_1) <details><summary>RU</summary>Отправить изменения на внешний репозиторий.</details> |  |
 | <a id='back_task_9_part_1'>9</a>  | [Create preferences.json file](#task_9_part_1) <details><summary>RU</summary>Создать файл preferences.json</details> |  |
 | <a id='back_task_10_part_1'>10</a>  | [In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.](#task_10_part_1) <details><summary>RU</summary>В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.</details> |  |
@@ -94,21 +94,94 @@ README.md  assets  execute_folder  new.json
 
 
 ### <a id='task_4_part_1'>4. Add file under git.</a>  |  [Back to list](#back_task_4_part_1)
+Input:
+``` bash
+git add .
+or
+git add new.json
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git add .
+
+```
+
 #### Description:
 
-
+>`git add .` - add all new files
+>`git add new.json` - add current file
 
 ### <a id='task_5_part_1'>5. Commit file.</a>  |  [Back to list](#back_task_5_part_1)
+Input:
+``` bash
+git commit -m "add new.json"
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git commit -m "add new.json"
+[main c8aada4] add new.json
+ 4 files changed, 58 insertions(+), 10 deletions(-)
+ create mode 100644 new.json
+```
+
 #### Description:
 
 
 
 ### <a id='task_6_part_1'>6. Push file to external GitHub repository.</a>  |  [Back to list](#back_task_6_part_1)
+Input:
+``` bash
+git push
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Writing objects: 100% (8/8), 2.05 KiB | 1.03 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/MaksimVolkov/json.git
+   6e6c7b0..c8aada4  main -> main
+```
+
 #### Description:
 
 
 
 ### <a id='task_7_part_1'>7. Edit the contents of the "new.json" file - write information about yourself (full name, age, number of pets, future desired salary). Write everything in JSON format.</a>  |  [Back to list](#back_task_7_part_1)
+Input:
+``` bash
+vim new.json
+ INSERT
+{
+  "user": {
+    "id":1,
+    "name":"Dobby",
+    "last_name":"Houseelf",
+    "full_name": "Dobby Houseelf Potterovich",
+    "age": 30,
+    "number_of_pets": 1,
+    "desired_salary": 75000
+  }}
+:wq
+ENTER
+
+```
+
+Output:
+```
+MINGW64 /c/var/1a-testing-course/json (main)
+$ vim new.json 
+
+```
+
 #### Description:
 
 

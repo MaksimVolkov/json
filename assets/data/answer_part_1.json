@@ -15,23 +15,23 @@
     "description": ""
   },
   "task_4": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "git add .\nor\ngit add new.json",
+    "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git add .\n",
+    "description": ">`git add .` - add all new files\n>`git add new.json` - add current file"
   },
   "task_5": {
-    "input": "",
-    "output": "",
+    "input": "git commit -m \"add new.json\"",
+    "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git commit -m \"add new.json\"\n[main c8aada4] add new.json\n 4 files changed, 58 insertions(+), 10 deletions(-)\n create mode 100644 new.json",
     "description": ""
   },
   "task_6": {
-    "input": "",
-    "output": "",
+    "input": "git push",
+    "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git push\nEnumerating objects: 14, done.\nCounting objects: 100% (14/14), done.\nWriting objects: 100% (8/8), 2.05 KiB | 1.03 MiB/s, done.\nTotal 8 (delta 3), reused 0 (delta 0), pack-reused 0\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nTo https://github.com/MaksimVolkov/json.git\n   6e6c7b0..c8aada4  main -> main",
     "description": ""
   },
   "task_7": {
-    "input": "",
-    "output": "",
+    "input": "vim new.json\n INSERT\n{\n  \"user\": {\n    \"id\":1,\n    \"name\":\"Dobby\",\n    \"last_name\":\"Houseelf\",\n    \"full_name\": \"Dobby Houseelf Potterovich\",\n    \"age\": 30,\n    \"number_of_pets\": 1,\n    \"desired_salary\": 75000\n  }}\n:wq\nENTER\n",
+    "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ vim new.json \n",
     "description": ""
   },
   "task_8": {
