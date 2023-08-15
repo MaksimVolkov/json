@@ -1,1 +1,14 @@
-
+{
+  "id": "BUG-123456",
+  "severity": "High",
+  "title": "Add to Cart Button Not Functioning",
+  "description": "The 'Add to Cart' button on product pages is not working as expected. When clicking the button, the product is not added to the cart.",
+  "reproduction_steps": [
+    "Visit the product page of any item.",
+    "Locate the \'Add to Cart\' button.",
+    "Click the \'Add to Cart\' button.",
+    "Go to cart"
+  ],
+  "expected_result": "After clicking the 'Add to Cart' button, the selected item should be added to the cart, when viewing the cart, the selected item should be there.",
+  "actual_result": "After clicking the 'Add to cart' button, the product in the cart is not displayed, the cart is empty."
+}
