@@ -5,7 +5,7 @@
     "task_1": {
       "id": 1,
       "task_name_en": "Create an external repository named JSON.",
-      "task_name_ru": "Создать внешний репозиторий c названием JSON.",
+      "task_name_ru": "1 Создать внешний репозиторий c названием JSON.",
       "input": "",
       "output": "",
       "description": "Переходим в github по прямой ссылке https://github.com/new и создаем новый репозиторий:\n- вводим имя репозитория и убеждаемся что оно доступно\n- выбираем тип репозитория Public или Private\n- выбираем галочку при создании репозитория автоматически создать файл README.\n- .gitignore и license выбираем по необходимости.\n- жмем кнопку \"Create repository\"\n- после перенаправляет вашу страницу на созданные репозиторий\n\n![new_repo.gif](assets%2Fimg%2Fnew_repo.gif)",
@@ -14,7 +14,7 @@
     "task_2": {
       "id": 2,
       "task_name_en": "Clone JSON repository to local machine.",
-      "task_name_ru": "Клонировать репозиторий JSON на локальный компьютер.",
+      "task_name_ru": "2 Клонировать репозиторий JSON на локальный компьютер.",
       "input": "git clone https://github.com/MaksimVolkov/json.git\ncd json/\nls -la",
       "output": "MINGW64 /c/var/1a-testing-course\n$ git clone https://github.com/MaksimVolkov/json.git\nCloning into 'json'...\nremote: Enumerating objects: 42, done.\nremote: Counting objects: 100% (42/42), done.\nremote: Compressing objects: 100% (30/30), done.\nremote: Total 42 (delta 13), reused 30 (delta 9), pack-reused 0\nReceiving objects: 100% (42/42), 5.69 MiB | 7.32 MiB/s, done.\nResolving deltas: 100% (13/13), done.\n\nMINGW64 /c/var/1a-testing-course\n$ cd json/\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ ls -la\ntotal 21\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ./\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 ../\ndrwxr-xr-x 1 Maks 197611    0 Aug 14 21:35 .git/\n-rw-r--r-- 1 Maks 197611  416 Aug 14 21:35 .gitignore\n-rw-r--r-- 1 Maks 197611 8436 Aug 14 21:35 README.md",
       "description": "",
@@ -23,7 +23,7 @@
     "task_3": {
       "id": 3,
       "task_name_en": "Inside the local JSON, create the file \"new.json\".",
-      "task_name_ru": "Внутри локального JSON создать файл \"new.json\".",
+      "task_name_ru": "3 Внутри локального JSON создать файл \"new.json\".",
       "input": "touch new.json\nls\n",
       "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch new.json\nMINGW64 /c/var/1a-testing-course/json (main)\n$ ls\nREADME.md  assets  execute_folder  new.json",
       "description": "",
@@ -32,7 +32,7 @@
     "task_4": {
       "id": 4,
       "task_name_en": "Add file under git.",
-      "task_name_ru": "Добавить файл под гит.",
+      "task_name_ru": "4 Добавить файл под гит.",
       "input": "git add .\nor\ngit add new.json",
       "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git add .\n",
       "description": ">`git add .` - add all new files\n>`git add new.json` - add current file",
@@ -41,7 +41,7 @@
     "task_5": {
       "id": 5,
       "task_name_en": "Commit file.",
-      "task_name_ru": "Закоммитить файл.",
+      "task_name_ru": "5 Закоммитить файл.",
       "input": "git commit -m \"add new.json\"",
       "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git commit -m \"add new.json\"\n[main c8aada4] add new.json\n 4 files changed, 58 insertions(+), 10 deletions(-)\n create mode 100644 new.json",
       "description": "",
@@ -50,7 +50,7 @@
     "task_6": {
       "id": 6,
       "task_name_en": "Push file to external GitHub repository.",
-      "task_name_ru": "Отправить файл на внешний GitHub репозиторий.",
+      "task_name_ru": "6 Отправить файл на внешний GitHub репозиторий.",
       "input": "git push",
       "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git push\nEnumerating objects: 14, done.\nCounting objects: 100% (14/14), done.\nWriting objects: 100% (8/8), 2.05 KiB | 1.03 MiB/s, done.\nTotal 8 (delta 3), reused 0 (delta 0), pack-reused 0\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nTo https://github.com/MaksimVolkov/json.git\n   6e6c7b0..c8aada4  main -> main",
       "description": "",
@@ -59,7 +59,7 @@
     "task_7": {
       "id": 7,
       "task_name_en": "Edit the contents of the \"new.json\" file - write information about yourself (full name, age, number of pets, future desired salary). Write everything in JSON format.",
-      "task_name_ru": "Отредактировать содержание файла \"new.json\" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.",
+      "task_name_ru": "7 Отредактировать содержание файла \"new.json\" - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.",
       "input": "vim new.json\n INSERT\n{\n  \"user\": {\n    \"id\":1,\n    \"name\":\"Dobby\",\n    \"last_name\":\"Houseelf\",\n    \"full_name\": \"Dobby Houseelf Potterovich\",\n    \"age\": 30,\n    \"number_of_pets\": 1,\n    \"desired_salary\": 75000\n  }}\n:wq\nENTER\n",
       "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ vim new.json \n",
       "description": "",
@@ -68,17 +68,17 @@
     "task_8": {
       "id": 8,
       "task_name_en": "Submit changes to external repository.",
-      "task_name_ru": "Отправить изменения на внешний репозиторий.",
-      "input": "",
-      "output": "",
+      "task_name_ru": "8 Отправить изменения на внешний репозиторий.",
+      "input": "git add .\ngit commit -m \"added content to file new.json\"\ngit push\n",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ git add .\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git commit -m \"added content to file new.json\"\n[main d4e6d36] added content to file new.json\n 5 files changed, 107 insertions(+), 23 deletions(-)\n create mode 100644 assets/img/vim_1.jpg\n\nMINGW64 /c/var/1a-testing-course/json (main)\n$ git push\nEnumerating objects: 18, done.\nCounting objects: 100% (18/18), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (10/10), 23.19 KiB | 7.73 MiB/s, done.\nTotal 10 (delta 3), reused 0 (delta 0), pack-reused 0\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nTo https://github.com/MaksimVolkov/json.git\n   c8aada4..d4e6d36  main -> main\n",
       "description": "",
       "increased_complexity": false
     },
     "task_9": {
       "id": 9,
       "task_name_en": "Create preferences.json file",
-      "task_name_ru": "Создать файл preferences.json",
-      "input": "",
+      "task_name_ru": "9 Создать файл preferences.json",
+      "input": "touch preferences.json",
       "output": "",
       "description": "",
       "increased_complexity": false
@@ -86,7 +86,7 @@
     "task_10": {
       "id": 10,
       "task_name_en": "In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in JSON format.",
-      "task_name_ru": "В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.",
+      "task_name_ru": "10 В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.",
       "input": "",
       "output": "",
       "description": "",
@@ -95,17 +95,17 @@
     "task_11": {
       "id": 11,
       "task_name_en": "Create a sklls.json file to add information about the skills that will be studied in the course in JSON format",
-      "task_name_ru": "Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON",
-      "input": "",
-      "output": "",
-      "description": "",
+      "task_name_ru": "11 Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON",
+      "input": "touch skills.json\nvim skills.json\nINSERT\n{\n  \"ru\": [\n    {\n      \"title\": \"Основы работы ...\",\n      \"sections\": [{...},{...}]\n    }\n  ],\n  ... see full version in Description..\n}\nCTRL+C\n:wq\nENTER",
+      "output": "MINGW64 /c/var/1a-testing-course/json (main)\n$ touch skills.json\n",
+      "description": "```json\n{\n  \"ru\": [\n    {\n      \"title\": \"Основы работы с системой контроля версий Git\",\n      \"sections\": [\n        {\n          \"title\": \"Взаимодействие с веб интерфейсом GitHub\",\n          \"sections\": [\n            {\"title\": \"Создание репозитория\"},\n            {\"title\": \"Создание файлов\"},\n            {\"title\": \"Редактирование файлов\"},\n            {\"title\": \"Далать Commit changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Работа с командной строкой\",\n      \"sections\": [\n        {\"title\": \"Клонирование репозитория на локальное устройство\"},\n        {\"title\": \"Создание json файлов\"},\n        {\"title\": \"Редактирование файлов используя vim\"},\n        {\"title\": \"Использование json синтаксиса\"},\n        {\"title\": \"git add добавление (индексирование) файлов в локальном Git репозитории\"},\n        {\"title\": \"git commit - фиксирование изменений в git истории\"},\n        {\"title\": \"git push - отправка зафиксированных изменений на удаленный репозиторий (GitHub)\"},\n        {\"title\": \"git pull - получение изменений из удаленного репозитория (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Создание отчета проделанной работы\"}\n  ],\n  \"en\": [\n    {\n      \"title\": \"Basics of Using Git Version Control System\",\n      \"sections\": [\n        {\n          \"title\": \"Interacting with the GitHub Web Interface\",\n          \"sections\": [\n            {\"title\": \"Creating a Repository\"},\n            {\"title\": \"Creating Files\"},\n            {\"title\": \"Editing Files\"},\n            {\"title\": \"Making Commit Changes\"}\n          ]\n        }\n      ]\n    },\n    {\n      \"title\": \"Working with the Command Line\",\n      \"sections\": [\n        {\"title\": \"Cloning a Repository to Local Device\"},\n        {\"title\": \"Creating JSON Files\"},\n        {\"title\": \"Editing Files Using vim\"},\n        {\"title\": \"Using JSON Syntax\"},\n        {\"title\": \"git add - Adding (Indexing) Files to Local Git Repository\"},\n        {\"title\": \"git commit - Recording Changes in Git History\"},\n        {\"title\": \"git push - Sending Committed Changes to Remote Repository (GitHub)\"},\n        {\"title\": \"git pull - Fetching Changes from Remote Repository (GitHub)\"}\n      ]\n    },\n    {\"title\": \"Creating a Report of Accomplished Work\"}\n  ]\n}\nCTRL+C\n:wq\nENTER\n```\n",
       "increased_complexity": false
     },
     "task_12": {
       "id": 12,
       "task_name_en": "Upload 2 files at once to an external repository.",
-      "task_name_ru": "Отправить сразу 2 файла на внешний репозиторий.",
-      "input": "",
+      "task_name_ru": "12 Отправить сразу 2 файла на внешний репозиторий.",
+      "input": "git add . && git commit -m \"commit multiple files\" && git push",
       "output": "",
       "description": "",
       "increased_complexity": false
@@ -113,7 +113,7 @@
     "task_13": {
       "id": 13,
       "task_name_en": "Create a bug_report.json file on the web interface.",
-      "task_name_ru": "На веб интерфейсе создать файл bug_report.json.",
+      "task_name_ru": "13 На веб интерфейсе создать файл bug_report.json.",
       "input": "",
       "output": "",
       "description": "",
@@ -122,7 +122,7 @@
     "task_14": {
       "id": 14,
       "task_name_en": "Make Commit changes (save) changes on the web interface.",
-      "task_name_ru": "Сделать Commit changes (сохранить) изменения на веб интерфейсе.",
+      "task_name_ru": "14 Сделать Commit changes (сохранить) изменения на веб интерфейсе.",
       "input": "",
       "output": "",
       "description": "",
@@ -131,7 +131,7 @@
     "task_15": {
       "id": 15,
       "task_name_en": "On the web interface, modify the bug_report.json file, add a bug report in JSON format.",
-      "task_name_ru": "На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.",
+      "task_name_ru": "15 На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.",
       "input": "",
       "output": "",
       "description": "",
@@ -140,7 +140,7 @@
     "task_16": {
       "id": 16,
       "task_name_en": "Make Commit changes (save) changes on the web interface.",
-      "task_name_ru": "Сделать Commit changes (сохранить) изменения на веб интерфейсе.",
+      "task_name_ru": "16 Сделать Commit changes (сохранить) изменения на веб интерфейсе.",
       "input": "",
       "output": "",
       "description": "",
@@ -149,7 +149,7 @@
     "task_17": {
       "id": 17,
       "task_name_en": "Synchronize external and local JSON repository",
-      "task_name_ru": "Синхронизировать внешний и локальный репозиторий JSON",
+      "task_name_ru": "17 Синхронизировать внешний и локальный репозиторий JSON",
       "input": "",
       "output": "",
       "description": "",

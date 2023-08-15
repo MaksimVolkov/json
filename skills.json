@@ -1,0 +1,62 @@
+{
+  "ru": [
+    {
+      "title": "Основы работы с системой контроля версий Git",
+      "sections": [
+        {
+          "title": "Взаимодействие с веб интерфейсом GitHub",
+          "sections": [
+            {"title": "Создание репозитория"},
+            {"title": "Создание файлов"},
+            {"title": "Редактирование файлов"},
+            {"title": "Далать Commit changes"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Работа с командной строкой",
+      "sections": [
+        {"title": "Клонирование репозитория на локальное устройство"},
+        {"title": "Создание json файлов"},
+        {"title": "Редактирование файлов используя vim"},
+        {"title": "Использование json синтаксиса"},
+        {"title": "git add добавление (индексирование) файлов в локальном Git репозитории"},
+        {"title": "git commit - фиксирование изменений в git истории"},
+        {"title": "git push - отправка зафиксированных изменений на удаленный репозиторий (GitHub)"},
+        {"title": "git pull - получение изменений из удаленного репозитория (GitHub)"}
+      ]
+    },
+    {"title": "Создание отчета проделанной работы"}
+  ],
+  "en": [
+    {
+      "title": "Basics of Using Git Version Control System",
+      "sections": [
+        {
+          "title": "Interacting with the GitHub Web Interface",
+          "sections": [
+            {"title": "Creating a Repository"},
+            {"title": "Creating Files"},
+            {"title": "Editing Files"},
+            {"title": "Making Commit Changes"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Working with the Command Line",
+      "sections": [
+        {"title": "Cloning a Repository to Local Device"},
+        {"title": "Creating JSON Files"},
+        {"title": "Editing Files Using vim"},
+        {"title": "Using JSON Syntax"},
+        {"title": "git add - Adding (Indexing) Files to Local Git Repository"},
+        {"title": "git commit - Recording Changes in Git History"},
+        {"title": "git push - Sending Committed Changes to Remote Repository (GitHub)"},
+        {"title": "git pull - Fetching Changes from Remote Repository (GitHub)"}
+      ]
+    },
+    {"title": "Creating a Report of Accomplished Work"}
+  ]
+}
